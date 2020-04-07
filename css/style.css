@@ -1,0 +1,295 @@
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Book Antiqua, Big Caslon, serif;
+	font-size: 16px;
+	margin: 0%;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	max-height: 100%;
+	background-color: #f8f4f1;
+	margin: 0%;
+	padding: 1%;
+
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 5%;
+}
+
+.btn {
+	background: grey;
+	color: black;
+	padding: 1%;
+	text-decoration: none;
+	border: 0;
+	text-align: center;
+	color: white;
+}
+
+.btn a {
+	text-decoration: none;
+}
+
+.main-nav {
+	display: grid;
+	align-items: center;
+	margin: 0% 4.1% 0% 4.1%;
+	grid-gap: 4rem;
+	padding: 0%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	height: 100%;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-align: center;
+	background-color: #f8f4f1;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: #000000;
+	padding: 4% 5%;
+}
+
+.main-nav a:hover{
+	background-color: #D4D4AA;
+}
+
+.cups a:hover{
+	background-color: #f8f4f1;
+}
+
+.dropdown {
+	grid-column: 4;
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	float: left;
+	background-color: #f8f4f1;
+	width: 100%;
+	font-size: 1rem;
+	text-align: left;
+	z-index: 1;
+	padding: 1%;
+	
+}
+
+.dropdown-content a {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	padding: 1%;
+	text-align: center;
+}
+
+.dropdown-content p {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.gallery {
+	display: grid;
+	grid-gap: 0%;
+	grid-template-columns: 4fr 1.1fr;
+	margin: 0% 4.7% 0% 4.7%;
+	align-items: center;
+	background-color: #f8f4f1;
+
+}
+
+.picture1 {
+	background: url(img/kanelbullar.jpeg);
+	background-size: 1200px;
+	background-size: cover;
+	background-position: center;
+	padding: 10rem 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	color: white;
+	background-color: white;
+}
+
+.picture1 h1, .picture1 p, .btn {
+	background-color: rgba(166, 166, 166, 0.75);
+	padding: 1%;
+	font-size: 1.5rem;
+}
+
+.picture1 h1 {
+	font-size: 2rem
+}
+
+.menu {
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	height: 100%;
+	grid-template-rows: repeat(auto-fit);
+	font-family: ;
+	padding: 1rem;
+	padding-top: 1rem;
+	text-align: center;
+	align-items: center;
+
+}
+
+.menu a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 1.5rem;
+	
+}
+
+.container {
+	display: grid;
+	text-align: center;
+	background-color: #f8f4f1;
+	margin: 0% 6% 0% 6%;
+}
+
+.order-food{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	margin: 0% 4.7% 0% 4.7%;
+	background-color: #f8f4f1;
+}
+
+button{
+	font-size: 1.5rem;
+	font-family: inherit;
+}
+
+.sidenav {
+  height: 100%;
+  z-index: 1;
+  background-color: #efe8ce;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 3% 0% 3% 0%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  	background-color: #D4D4AA;
+}
+
+.active {
+  background-color: #D4D4AA;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #efe8ce;
+  padding-left: 8px;
+}
+
+.order-display {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(auto-fit);
+	text-align: center;
+
+}
+
+.order-display-img{
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.order-display-title {
+	grid-column: 1/4;
+	font-size: 1.5rem; 
+}
+
+.bestall {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+}
+
+.bestall-text {
+	text-align: center;
+	grid-column: 2/3;
+	font-size: 1.5rem;
+}
+
+.dagens {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+
+}
+
+.dagens-text {
+	text-align: center;
+	grid-column: 2/3;
+	font-size: 1.5rem;
+}
+
+.dagens-text a {
+	color: #000000;
+}
+
+
+footer {
+	text-align: center;
+	background-color:;
+	padding: 3%;
+	background-color: #EFE8CE;
+}
+
+@media (max-width: 600px){
+	body{
+		font-size: 14px;
+	}
+
+	.gallery{
+		grid-template-columns: 1fr;
+
+	}
+	
+	.sidenav a {
+	  	font-size: 18px;
+	}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+
+  }
+
+}
